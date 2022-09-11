@@ -3,8 +3,14 @@
     height: 820px;
 
 }
+#pic1 img{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
 .headings{
     font-size: 1.7rem;
+    align-items:baseline;
 
 }
 /* about */

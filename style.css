@@ -45,8 +45,8 @@ html{
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
     height: 840px;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items:flex-start ;
     color: white;
 }
 #home::before{
@@ -54,7 +54,7 @@ html{
     position: absolute;
     top: 0;
     right: 0;
-    background: url('img2.jpg') no-repeat center center/cover;
+    background:linear-gradient(rgb(0, 0, 0),rgb(255, 0, 0));
     height: 900px;
     width: 100%;
     z-index: -1;
@@ -92,6 +92,20 @@ html{
     font-weight: bold;
 
 }
+/* #pic1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+} */
+#pic1 img{
+    width: 500px;
+    height: 500px;
+    padding-left: 100px;
+    padding-right:-5rem;
+    padding-top: 50px;
+    
+}
+
 /* About section*/
 #about{
     display: flex;
@@ -99,6 +113,8 @@ html{
     box-sizing: border-box;
     padding: 20px;
     margin-bottom: 50px;
+    background: linear-gradient(rgb(126, 26, 26),rgb(0, 0, 0));
+    color: aliceblue;
 }
 #pic{
     display: flex;
@@ -112,17 +128,19 @@ html{
     flex-direction: column;
     text-align: justify;
     padding: 10px;
+    color: aliceblue;
 }
 #intro h2{
     font-size: 2rem;
     margin-bottom: 20px;
+    color: aliceblue;
 
 }
 /* portfolio section */
 #portfolio{
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(rgb(0, 0, 0),rgb(126, 26, 26));
     color: white;
     align-items: center;
     padding: 20px ;
@@ -145,6 +163,8 @@ html{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    background: linear-gradient(rgb(126, 26, 26),rgb(0, 0, 0));
+    color: aliceblue;
 }
 .row{
     display: flex;
@@ -163,15 +183,17 @@ html{
     text-align: justify;
     padding: 10px;
     border-radius: 15px;
-    background: linear-gradient(to top,rgb(255,45,45) 50%, white 50%);
+    background: linear-gradient(to top,rgb(198, 80, 80) 50%, white 50%);
     background-size: 100% 200%;
-    transition: all .8s;
+    transition:all .5s;
+    color: black;
 }
 .box:hover{
     background-position: left bottom;
     color: white;
     border: none;
     box-shadow: 0 0 20px rgb(255, 45, 45);
+    
 }
 .box img{
     width: 80px;
@@ -184,7 +206,7 @@ html{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.9);
+    background: linear-gradient(rgb(0, 0, 0),rgb(126, 26, 26));
     color: white;
     padding: 20px;
 }
